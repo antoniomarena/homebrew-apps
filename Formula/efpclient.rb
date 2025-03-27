@@ -12,7 +12,7 @@ class Efpclient < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3.13")
-    venv.pip_install "-i https://test.pypi.org/simple/ efpclient"
+    venv.pip_install "-i https://test.pypi.org/simple/" "efpclient"
     venv.pip_install_and_link(buildpath, build_isolation: false)
   end
 

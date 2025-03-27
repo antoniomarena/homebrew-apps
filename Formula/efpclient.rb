@@ -15,6 +15,6 @@ class Efpclient < Formula
 
   test do
     # Simply run the program
-    system `bin/"efpclient"`
+    system `"efpclient"`
   end
 end

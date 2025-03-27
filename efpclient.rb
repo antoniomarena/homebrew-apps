@@ -1,4 +1,4 @@
-class EFPClient < Formula
+class Efpclient < Formula
   include Language::Python::Virtualenv
 
   desc "EF Portal Client is an easy-to-use and lightweight Python client to interact with the EF Portal REST API"

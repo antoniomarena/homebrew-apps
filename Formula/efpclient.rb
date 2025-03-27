@@ -1,7 +1,7 @@
 class Efpclient < Formula
   include Language::Python::Virtualenv
 
-  desc "EF Portal Client is an easy-to-use and lightweight Python client to interact with the EF Portal REST API"
+  desc "EFPClient is an easy-to-use Python client to interact with the EF Portal REST API."
   homepage "https://github.com/NISP-GmbH/efpclient"
   url "https://test-files.pythonhosted.org/packages/89/0b/c2b82663f0a5e12eb5621b7f020a471d30e53185e2d97adef60ad3a2799d/efpclient-2025.0.2.tar.gz"
   version "25.0.2"
@@ -15,6 +15,6 @@ class Efpclient < Formula
 
   test do
     # Simply run the program
-    system "#{bin}/efpclient"
+    system `bin/"efpclient"`
   end
 end

@@ -7,7 +7,7 @@ class Efpclient < Formula
   version "25.0.2"
   sha256 "45e2765f55783674b59fe1eca349db655fe19cfdde96c58a6799b01907c1c48c"
 
-  depends_on "python@3.y"
+  depends_on "python@3.13"
 
   def install
     virtualenv_install_with_resources

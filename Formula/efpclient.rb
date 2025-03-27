@@ -5,7 +5,6 @@ class Efpclient < Formula
   homepage "https://github.com/NISP-GmbH/efpclient"
   url "https://test-files.pythonhosted.org/packages/89/0b/c2b82663f0a5e12eb5621b7f020a471d30e53185e2d97adef60ad3a2799d/efpclient-2025.0.2.tar.gz"
   sha256 "45e2765f55783674b59fe1eca349db655fe19cfdde96c58a6799b01907c1c48c"
-  version "2025.0.2"
   license "Apache-2.0"
 
   depends_on "python@3.13"

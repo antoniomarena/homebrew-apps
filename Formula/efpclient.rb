@@ -49,6 +49,8 @@ class Efpclient < Formula
   end
 
   test do
-    assert_match "NI SP Software EF Portal Client, version 2025.0.2", shell_output("efpclient --version")
+    output = shell_output("efpclient --version")
+    print output
+    assert_match "NI SP Software EF Portal Client, version 2025.0.2", output
   end
 end

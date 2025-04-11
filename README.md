@@ -75,7 +75,7 @@ efpclient --version
 You should see something like this:
 
 ```shell
-NI SP Software EF Portal Client, version 2025.0.2
+NI SP Software EF Portal Client, version 2025.0.4
 ```
 
 ### Enable Shell Completion

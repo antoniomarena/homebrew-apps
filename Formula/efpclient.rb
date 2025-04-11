@@ -3,8 +3,8 @@ class Efpclient < Formula
 
   desc "This is an easy-to-use Python client to interact with the EF Portal REST API"
   homepage "https://github.com/NISP-GmbH/efpclient"
-  url "https://test-files.pythonhosted.org/packages/89/0b/c2b82663f0a5e12eb5621b7f020a471d30e53185e2d97adef60ad3a2799d/efpclient-2025.0.2.tar.gz"
-  sha256 "45e2765f55783674b59fe1eca349db655fe19cfdde96c58a6799b01907c1c48c"
+  url "https://files.pythonhosted.org/packages/45/1f/d5e5fddae2c721ded4ce6579b7033e5c0272e08af60f7dc043f8162aa074/efpclient-2025.0.4.tar.gz"
+  sha256 "0cc4a19330410af004087ac24b95b6ef48b28dcb4af987028368ef3997f348a7"
   license "Apache-2.0"
 
   depends_on "python@3.13"
@@ -40,8 +40,8 @@ class Efpclient < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/aa/63/e53da845320b757bf29ef6a9062f5c669fe997973f966045cb019c3f4b66/urllib3-2.3.0.tar.gz"
-    sha256 "f8c5449b3cf0861679ce7e0503c7b44b5ec981bec0d1d3795a07f1ba96f0204d"
+    url "https://files.pythonhosted.org/packages/8a/78/16493d9c386d8e60e442a35feac5e00f0913c0f4b7c217c11e8ec2ff53e0/urllib3-2.4.0.tar.gz"
+    sha256 "414bc6535b787febd7567804cc015fee39daab8ad86268f1310a9250697de466"
   end
 
   def install
@@ -51,6 +51,6 @@ class Efpclient < Formula
   test do
     output = shell_output("efpclient --version")
     print output
-    assert_match "NI SP Software EF Portal Client, version 2025.0.2", output
+    assert_match "NI SP Software EF Portal Client, version 2025.0.4", output
   end
 end
